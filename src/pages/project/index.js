@@ -18,7 +18,7 @@ function Project() {
   return (
     <div>
       <h1>Project Id: {projectId}</h1>
-      <div class='description'>
+      <div className='description'>
         <h3>Project description</h3>
       </div>
       <ul>
