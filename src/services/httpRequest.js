@@ -1,8 +1,12 @@
-function HttpRequest() {
+import axios from 'axios';
+
+const httpRequest = async function (config) {
 
   const baseURL = process.env.API_BASE_URL || 'http://localhost:8000/';
 
-  const { data, status, statusText } = await axios({ ...config, baseURL });
+  console.log({config});
+
+  const { data, status, statusText } = await axios(config);
   return {
     data,
     status,
@@ -11,4 +15,4 @@ function HttpRequest() {
 
 }
 
-export default HttpRequest;
+export default httpRequest;
