@@ -1,8 +1,7 @@
 import gh from 'octonode';
 import httpRequest from './httpRequest';
 
-const clientId = '3df232c8f7c9ca23ee40'; 
-const clientSecret = '3ac2e920fdf8a27d0f053fd6c29217d439d81ba7';
+
 const redirectUri = 'redirect_uri';
 
 
